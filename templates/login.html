@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+
+    <form action="login" method="post">
+      {% csrf_token %}
+      <div class="box-2">
+        <div class="login-form-container"> 
+            <h1>Login Form</h1>
+      <input type="text" name="user1" class="input-field" placeholder="Username"/><br />
+      <input type="password" name="pwd1" class="input-field" placeholder="Password"/><br />
+      <input type="submit" value="Log In" class="login-button"/>
+      </div>
+      </div>
+    </form>
+
+    <style>
+      .input-field {
+        box-sizing: border-box;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid rgb(168, 168, 168);
+        width: 250px;
+        outline: none;
+        margin: 10px;
+      }
+      .login-button{
+        box-sizing: border-box;
+        color: white;
+        font-size: 14px;
+        padding: 13px;
+        border-radius: 7px;
+        border: none;
+        width: 150px;
+        outline: none;
+        background-color: rgb(56, 189, 149);
+      }
+      .login-form-container
+{
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+.login-form-container h1
+{
+  color: black;
+  font-size: 34px;
+  padding: 20px;
+}
+    </style>
+  </body>
+</html>
